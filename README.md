@@ -27,7 +27,8 @@
 **📦 Oriented Object Detection Head**  
 - Predicts rotated bounding boxes: (cx, cy, w, h, θ)  
 - Angle-aware loss for stable rotation regression  
-- DOTA-compatible detection format  
+- DOTA-compatible detection format
+  
 **Core Contributions**  
 **1. SGSM Module**  
 Encodes geometric structure consistency via self-supervised rotation-aware learning.  
@@ -48,62 +49,61 @@ Enables robust rotated object detection for arbitrary-shaped objects.
 **📁 Project Structure**  
 **SGSM-OD/**  
  **  
-   ├── models/**  
+   ├── models/  
  **  
-   │   ├── backbone.py**  
+   │   ├── backbone.py 
  **  
-   │   ├── sgsm.py**  
+   │   ├── sgsm.py 
  **  
-   │   ├── detection_head.py**  
+   │   ├── detection_head.py 
  **  
-   │   ├── oriented_head.py**  
+   │   ├── oriented_head.py  
  **  
-   │   ├── clip_fusion.py**  
+   │   ├── clip_fusion.py 
  **  
-   │   └── detector.py**  
- **  
-   │**  
- **  
-   ├── datasets/**  
- **  
-   │   ├── dota.py**  
- **  
-   │   ├── transforms.py**  
+   │   └── detector.py  
  **  
    │**  
  **  
-   ├── utils/**  
+   ├── datasets/ 
  **  
-   │   ├── losses.py**  
+   │   ├── dota.py 
  **  
-   │   ├── metrics.py**  
- **  
-   │**  
- **  
-   ├── configs/**  
- **  
-   │   ├── train_sgsm.yaml**  
+   │   ├── transforms.py  
  **  
    │**  
  **  
-   ├── train.py**  
+   ├── utils/  
  **  
-   ├── test.py**  
+   │   ├── losses.py  
  **  
-   ├── inference.py**  
+   │   ├── metrics.py 
  **  
-   └── README.md**  
+   │**  
+ **  
+   ├── configs/ 
+ **  
+   │   ├── train_sgsm.yaml  
+ **  
+   │**  
+ **  
+   ├── train.py 
+ **  
+   ├── test.py 
+ **  
+   ├── inference.py  
+ **  
+   └── README.md 
  **  
   **  
  **  
   **  
    
-**📦 Dataset: DOTA**  
+**📦 Dataset: DOTA 
    
    
  This project uses the **DOTA-v1.0 dataset** for rotated object detection.  
-   
-    
+     
    
  Download dataset:  
 - [https://captain-whu.github.io/DOTA/dataset.html  
@@ -122,6 +122,7 @@ Enables robust rotated object detection for arbitrary-shaped objects.
    
   ](https://captain-whu.github.io/DOTA/dataset.html "https://captain-whu.github.io/DOTA/dataset.html")  
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nO3OMQ2AABAAsSNhwgJOUPcjIpnRgQU2QtIq6DIze3UGAMBf3Gu1VcfXEwAAXrseaJEEL8XMiYMAAAAASUVORK5CYII=)  
+
    
 **⚙️ Installation**  
    
@@ -134,9 +135,13 @@ git clone https://github.com/your-repo/SGSM-OD.git 
  - PyTorch ≥ 2.0    
  - OpenCV    
  - CUDA-enabled GPU   
+
+ 
  # **Configuration**    
  Modify training settings in:    
  configs/train_sgsm.yaml    
+
+ 
  # **Training**    
  Run training with:    
  python train.py    
@@ -156,7 +161,8 @@ git clone https://github.com/your-repo/SGSM-OD.git 
  Output:    
  - result.png with rotated bounding boxes    
    
-# ** Method Overview**    
+# ** Method Overview**  
+
  ### **Pipeline**    
 Input Image    
     ↓    

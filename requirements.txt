@@ -1,0 +1,19 @@
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Scientific computing
+numpy>=1.23
+scipy>=1.10
+
+# Image processing
+opencv-python>=4.7.0
+Pillow>=9.0.0
+
+# Utilities
+tqdm>=4.64
+pyyaml>=6.0
+
+# Optional (recommended for real CLIP)
+ftfy>=6.1.1
+regex>=2023.0.0

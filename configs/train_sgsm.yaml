@@ -1,0 +1,87 @@
+# =========================
+# Dataset configuration
+# =========================
+dataset:
+  name: DOTA-v1.0
+  img_dir: datasets/DOTA/images
+  ann_dir: datasets/DOTA/labels
+  img_size: 1024
+
+# =========================
+# Model configuration
+# =========================
+model:
+  name: SGSMDetector
+  num_classes: 15
+
+  backbone:
+    type: SimpleBackbone
+    base_channels: 64
+
+  sgsm:
+    enabled: true
+
+  clip_fusion:
+    enabled: true
+    clip_dim: 512
+
+  head:
+    type: OrientedDetectionHead
+
+# =========================
+# Training configuration
+# =========================
+train:
+  epochs: 50
+  batch_size: 2
+  num_workers: 4
+  lr: 0.0001
+  weight_decay: 0.0005
+
+  optimizer: AdamW
+  scheduler: StepLR
+  step_size: 15
+  gamma: 0.1
+
+  amp: true  # mixed precision
+
+# =========================
+# Loss weights
+# =========================
+loss:
+  cls_weight: 1.0
+  box_weight: 1.0
+  angle_weight: 0.5
+  sgsm_weight: 1.0
+  clip_weight: 0.5
+
+# =========================
+# CLIP settings
+# =========================
+clip:
+  model_name: ViT-B/32
+  pretrained: openai
+  temperature: 0.07
+
+# =========================
+# SGSM settings
+# =========================
+sgsm:
+  rotation_aug: true
+  multi_scale: true
+
+# =========================
+# Logging & saving
+# =========================
+logging:
+  print_interval: 10
+  save_dir: checkpoints/
+  save_freq: 5
+
+# =========================
+# Inference
+# =========================
+inference:
+  conf_threshold: 0.3
+  topk: 100
+  nms_threshold: 0.5

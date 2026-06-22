@@ -126,8 +126,8 @@ Enables robust rotated object detection for arbitrary-shaped objects.
    
 **⚙️ Installation**  
    
-git clone https://github.com/your-repo/SGSM-OD.git    
- cd SGSM-OD    
+git clone https://github.com/Faryalaurooj/RS-VLM-2.git  
+ cd RSVLM    
       
  pip install -r requirements.txt    
  Recommended:    

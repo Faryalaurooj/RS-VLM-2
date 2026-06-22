@@ -47,7 +47,7 @@ Enables robust rotated object detection for arbitrary-shaped objects.
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANElEQVR4nO3OQQmAUBBAwSf8GGLWDWFDY3ixgjcRZhLMNjNHdQYAwF9cq1rV/vUEAIDX7gcRXAQ2s/16gwAAAABJRU5ErkJggg==)  
    
 **📁 Project Structure**  
-**SGSM-OD/**  
+**RS-VLM-2/**  
  **  
    ├── models/  
  **  

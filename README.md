@@ -39,7 +39,7 @@ Enables robust rotated object detection for arbitrary-shaped objects.
    
      
 **📊 Full Evaluation Pipeline**  
-- [mAP@0.5 evaluation](mailto:mAP@0.5 "mailto:mAP@0.5")  
+- [mAP@0.5 evaluation] 
 - Rotated IoU matching  
 - Per-class performance reporting  
    
